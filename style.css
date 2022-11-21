@@ -17,17 +17,17 @@
 	*/
 	/*rosebox*/
 
-	--main-background: #222222;
-	--main-card-background: #262626;
-	--main-card-bg-secondary: #303030;
-	--main-text-color: rgba(255, 255, 255, 0.8);
-	--main-text-color-secondary: #a3a5aa;
-	--main-accent: #a57562;
+	--main-background: #181818;
+	--main-card-background: #282828;
+	--main-card-bg-secondary: #383838;
+	--main-text-color: rgba(196, 172, 169, 0.6);
+	--main-text-color-secondary: #c4aca9;
+	--main-accent: rgba(196, 172, 169, 0.4);
 	--main-accent-secondary: rgba(165, 117, 98, 0.2);
 
-	--green: #98c379;
-	--cyan: #61afef;
-	--red: #e06c75;
+	--green: #45ac57;
+	--cyan: #569aac;
+	--red: #df2566;
 
 	--border-radius: 7.5px;
 	--border-size: 0px;

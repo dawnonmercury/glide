@@ -29,25 +29,13 @@ const settings = {
 	],
 	l: { //links
 		col1: [
-			{ name: "link 1", url: "#" },
-			{ name: "link 2", url: "#" },
-			{ name: "link 3", url: "#" },
-			{ name: "link 4", url: "#" },
-			{ name: "link 5", url: "#" },
+			{ name: "Void", url: "https://docs.voidlinux.org" },
+			{ name: "Youtube", url: "youtube.com" },
 		],
 		col2: [
-			{ name: "link 1", url: "#" },
-			{ name: "link 2", url: "#" },
-			{ name: "link 3", url: "#" },
-			{ name: "link 4", url: "#" },
-			{ name: "link 5", url: "#" },
+			{ name: "Whatsapp", url: "web.whatsapp.com" },
 		],
 		col3: [
-			{ name: "link 1", url: "#" },
-			{ name: "link 2", url: "#" },
-			{ name: "link 3", url: "#" },
-			{ name: "link 4", url: "#" },
-			{ name: "link 5", url: "#" },
 		]
 	}
 }
