@@ -1,7 +1,7 @@
 let toggle, settbtn, containerElem
 let time = new Date()
 
-const containerObj = {
+let containerObj = {
 	p: { //props
 		connect: false, //.connect: connects links together
 		compact: false, //.compact: make links compact
@@ -41,8 +41,11 @@ function randomNumberBetween(min, max) {
 //this will only update settings
 if (typeof ls_containerObj !== 'undefined' && ls_containerObj !== null) {
 	let parsed = JSON.parse(ls_containerObj)
+	console.log("before", Object.assign({}, containerObj), "after", parsed)
 	console.log("found data in localStorage, loading Container: ", parsed)
-	Object.assign(containerObj, parsed) //update the current container object with the one from localstorage
+
+	//Object.assign(containerObj, parsed) //update the current container object with the one from localstorage
+	containerObj = circleAssign(containerObj, parsed)
 }
 /**
 * Container is the main object for layout; if you change its props, the layout instantly updates.
@@ -279,9 +282,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		console.log("found data in localStorage, loading classList: ", ls_classList)
 		containerElem.classList = ls_classList
 
-		loadConstraints.layoutHasApplied = true;
-		loadConstraints.check()
 	}
+	loadConstraints.layoutHasApplied = true;
+	loadConstraints.check()
 
 	document.getElementById('styles').innerHTML = `:root{--maxwidth:${Container.p.width}rem;}`
 	updateClock()
@@ -434,7 +437,7 @@ function miscUpdate(what, value, genuine = true) {
 			} else {
 				checkAndApplyImg(`img/${value}`, img)
 			}
-			
+		break;
 		case "customfont":
 			//add some rules to apply the custom font
 			{
