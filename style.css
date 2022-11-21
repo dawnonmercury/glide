@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 @font-face {
-	font-family: "Cascadia";
-	src: url("fonts/CascadiaMono.woff2") format("woff");
+	font-family: "Comic Code Ligatures";
+	src: url("fonts/ComicCodeLigatures-Regular.woff2") format("woff");
 }
 :root {
 	/*
